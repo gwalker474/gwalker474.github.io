@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Gareth Walker&#x27;s photo galleries - Home</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Gareth Walker&#x27;s photo galleries</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>
+      </nav>
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+    <a href="Cricket.html" style="background-image: url('media/small/Cricket/Best%20of%20the%202024%20season%20so%20far/20240420-174707-49_v1.jpg')">
+            <div class="info">
+              <h3>Cricket</h3>
+              <div class="summary">1 album, 52 photos</div>
+              <div class="date">20 Apr 2024 - 17 Aug 2024</div>
+            </div>
+          </a><a href="Hockey.html" style="background-image: url('media/small/Hockey/Summer%20league%202024/20240806-191716-72_v2.jpg')">
+            <div class="info">
+              <h3>Hockey</h3>
+              <div class="summary">1 album, 31 photos</div>
+              <div class="date">06 Aug 2024 - 06 Aug 2024</div>
+            </div>
+          </a>  </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+      </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>All images (c) Gareth Walker. If you repost or share any of my pictures, please leave the watermark visible. Please tag me into posts on Instagram using my images: <a href="https://www.instagram.com/gwalker_474/">@gwalker_474</a>. Interested in getting higher resolution versions without the watermark for commercial use, private use, printing etc.? <a href=mailto:"walkergareth474@gmail.com">Send me an email</a> or send me a message via Instagram: <a href="https://www.instagram.com/gwalker_474/">@gwalker_474</a>. There is no charge for these if the image is of you or a member of your family.</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
