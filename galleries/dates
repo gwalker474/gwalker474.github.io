@@ -1,0 +1,23 @@
+#!/bin/bash
+
+for f in *.html
+do
+    
+    # get grep to return lines containing class="date"
+    grep "class=\"date\"" "$f" |
+	# then get the string in between the braces
+	grep -oP '(?<=\>).*?(?=\<)' |
+	# then cycle through each of the hits
+	while read -r LINE
+	do
+	    start=$(cut -d'-' -f1 <<< "$LINE" | xargs)
+	    end=$(cut -d'-' -f2 <<< "$LINE" | xargs)
+	    # if the dates match...
+	    if [[ "$start" == "$end" ]]
+	    then
+		# ...replace with just one date
+		sed -i "s|$LINE|$start|" $f
+	    fi
+	done 
+
+done
