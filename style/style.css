@@ -371,3 +371,25 @@ body {
     max-width: 100%;
   }
 }
+
+/* for different banners depending on screen size */
+
+.img-desktop {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-mobile {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 480px) {
+    .img-mobile {
+	display: none;
+    }
+    .img-desktop {
+	display: block;	
+    }
+}
