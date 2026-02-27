@@ -188,8 +188,6 @@
 
 .lg-sub-html {
   font-weight: normal;
-  font-weight: normal;
-  font-weight: normal;
   background-color: rgba(0, 0, 0, 0.45);
   bottom: 0;
   color: #EEE;
@@ -337,15 +335,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .lg-outer.lg-pull-caption-up .lg-sub-html {
   font-weight: normal;
-  font-weight: normal;
-  font-weight: normal;
   -webkit-transition: bottom 0.25s ease;
   -o-transition: bottom 0.25s ease;
   transition: bottom 0.25s ease;
 }
 .lg-outer.lg-pull-caption-up.lg-thumb-open .lg-sub-html {
-  font-weight: normal;
-  font-weight: normal;
   font-weight: normal;
   bottom: 100px;
 }
